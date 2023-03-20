@@ -170,6 +170,125 @@ function createBreakfastMenu() {
   menuTitle.appendChild(menuTitleName);
   breakfastMenu.appendChild(menuTitle);
 
+  const breakfast = document.createElement("div");
+  breakfast.classList.add("breakfast");
+
+  const breakfastItem1 = document.createElement("div");
+  breakfastItem1.classList.add("item", "item--1");
+
+  const breakfastItem1Title = document.createElement("h3");
+  breakfastItem1Title.classList.add("title");
+  breakfastItem1Title.textContent = "Granola";
+  const breakfastItem1Content = document.createElement("p");
+  breakfastItem1Content.classList.add("content");
+  breakfastItem1Content.textContent =
+    "Granola with acai berry, greek yoghurt, berries, honey & nuts.";
+  const breakfastItem1Price = document.createElement("p");
+  breakfastItem1Price.classList.add("price");
+  breakfastItem1Price.textContent = "€8.50";
+
+  breakfastItem1.appendChild(breakfastItem1Title);
+  breakfastItem1.appendChild(breakfastItem1Content);
+  breakfastItem1.appendChild(breakfastItem1Price);
+  breakfast.appendChild(breakfastItem1);
+
+  const breakfastItem2 = document.createElement("div");
+  breakfastItem2.classList.add("item", "item--2");
+
+  const breakfastItem2Title = document.createElement("h3");
+  breakfastItem2Title.classList.add("title");
+  breakfastItem2Title.textContent = "Smashed Avocado";
+  const breakfastItem2Content = document.createElement("p");
+  breakfastItem2Content.classList.add("content");
+  breakfastItem2Content.textContent =
+    "Smashed avocado on toasted sourdough bread, topped with a poached egg and served with grilled tomatoes.";
+  const breakfastItem2Price = document.createElement("p");
+  breakfastItem2Price.classList.add("price");
+  breakfastItem2Price.textContent = "€8.50";
+
+  breakfastItem2.appendChild(breakfastItem2Title);
+  breakfastItem2.appendChild(breakfastItem2Content);
+  breakfastItem2.appendChild(breakfastItem2Price);
+  breakfast.appendChild(breakfastItem2);
+
+  const breakfastItem3 = document.createElement("div");
+  breakfastItem3.classList.add("item", "item--3");
+
+  const breakfastItem3Title = document.createElement("h3");
+  breakfastItem3Title.classList.add("title");
+  breakfastItem3Title.textContent = "Granola";
+  const breakfastItem3Content = document.createElement("p");
+  breakfastItem3Content.classList.add("content");
+  breakfastItem3Content.textContent =
+    "Granola with Acai Berry, Greek Yoghurt, Berries, Honey & Nuts";
+  const breakfastItem3Price = document.createElement("p");
+  breakfastItem3Price.classList.add("price");
+  breakfastItem3Price.textContent = "€8.50";
+
+  breakfastItem3.appendChild(breakfastItem3Title);
+  breakfastItem3.appendChild(breakfastItem3Content);
+  breakfastItem3.appendChild(breakfastItem3Price);
+  breakfast.appendChild(breakfastItem3);
+
+  const breakfastItem4 = document.createElement("div");
+  breakfastItem4.classList.add("item", "item--4");
+
+  const breakfastItem4Title = document.createElement("h3");
+  breakfastItem4Title.classList.add("title");
+  breakfastItem4Title.textContent = "Granola";
+  const breakfastItem4Content = document.createElement("p");
+  breakfastItem4Content.classList.add("content");
+  breakfastItem4Content.textContent =
+    "Granola with Acai Berry, Greek Yoghurt, Berries, Honey & Nuts";
+  const breakfastItem4Price = document.createElement("p");
+  breakfastItem4Price.classList.add("price");
+  breakfastItem4Price.textContent = "€8.50";
+
+  breakfastItem4.appendChild(breakfastItem4Title);
+  breakfastItem4.appendChild(breakfastItem4Content);
+  breakfastItem4.appendChild(breakfastItem4Price);
+  breakfast.appendChild(breakfastItem4);
+
+  const breakfastItem5 = document.createElement("div");
+  breakfastItem5.classList.add("item", "item--5");
+
+  const breakfastItem5Title = document.createElement("h3");
+  breakfastItem5Title.classList.add("title");
+  breakfastItem5Title.textContent = "Granola";
+  const breakfastItem5Content = document.createElement("p");
+  breakfastItem5Content.classList.add("content");
+  breakfastItem5Content.textContent =
+    "Granola with Acai Berry, Greek Yoghurt, Berries, Honey & Nuts";
+  const breakfastItem5Price = document.createElement("p");
+  breakfastItem5Price.classList.add("price");
+  breakfastItem5Price.textContent = "€8.50";
+
+  breakfastItem5.appendChild(breakfastItem5Title);
+  breakfastItem5.appendChild(breakfastItem5Content);
+  breakfastItem5.appendChild(breakfastItem5Price);
+  breakfast.appendChild(breakfastItem5);
+
+  const breakfastItem6 = document.createElement("div");
+  breakfastItem6.classList.add("item", "item--6");
+
+  const breakfastItem6Title = document.createElement("h3");
+  breakfastItem6Title.classList.add("title");
+  breakfastItem6Title.textContent = "Granola";
+  const breakfastItem6Content = document.createElement("p");
+  breakfastItem6Content.classList.add("content");
+  breakfastItem6Content.textContent =
+    "Granola with Acai Berry, Greek Yoghurt, Berries, Honey & Nuts";
+  const breakfastItem6Price = document.createElement("p");
+  breakfastItem6Price.classList.add("price");
+  breakfastItem6Price.textContent = "€8.60";
+
+  breakfastItem6.appendChild(breakfastItem6Title);
+  breakfastItem6.appendChild(breakfastItem6Content);
+  breakfastItem6.appendChild(breakfastItem6Price);
+  breakfast.appendChild(breakfastItem6);
+
+  breakfastMenu.appendChild(breakfast);
+
   return breakfastMenu;
 }
 
@@ -186,6 +305,125 @@ function createLunchMenu() {
 
   menuTitle.appendChild(menuTitleName);
   lunchMenu.appendChild(menuTitle);
+
+  const lunch = document.createElement("div");
+  lunch.classList.add("lunch");
+
+  const lunchItem1 = document.createElement("div");
+  lunchItem1.classList.add("item", "item--1");
+
+  const lunchItem1Title = document.createElement("h3");
+  lunchItem1Title.classList.add("title");
+  lunchItem1Title.textContent = "Granola";
+  const lunchItem1Content = document.createElement("p");
+  lunchItem1Content.classList.add("content");
+  lunchItem1Content.textContent =
+    "Granola with acai berry, greek yoghurt, berries, honey & nuts.";
+  const lunchItem1Price = document.createElement("p");
+  lunchItem1Price.classList.add("price");
+  lunchItem1Price.textContent = "€8.50";
+
+  lunchItem1.appendChild(lunchItem1Title);
+  lunchItem1.appendChild(lunchItem1Content);
+  lunchItem1.appendChild(lunchItem1Price);
+  lunch.appendChild(lunchItem1);
+
+  const lunchItem2 = document.createElement("div");
+  lunchItem2.classList.add("item", "item--2");
+
+  const lunchItem2Title = document.createElement("h3");
+  lunchItem2Title.classList.add("title");
+  lunchItem2Title.textContent = "Smashed Avocado";
+  const lunchItem2Content = document.createElement("p");
+  lunchItem2Content.classList.add("content");
+  lunchItem2Content.textContent =
+    "Smashed avocado on toasted sourdough bread, topped with a poached egg and served with grilled tomatoes.";
+  const lunchItem2Price = document.createElement("p");
+  lunchItem2Price.classList.add("price");
+  lunchItem2Price.textContent = "€8.50";
+
+  lunchItem2.appendChild(lunchItem2Title);
+  lunchItem2.appendChild(lunchItem2Content);
+  lunchItem2.appendChild(lunchItem2Price);
+  lunch.appendChild(lunchItem2);
+
+  const lunchItem3 = document.createElement("div");
+  lunchItem3.classList.add("item", "item--3");
+
+  const lunchItem3Title = document.createElement("h3");
+  lunchItem3Title.classList.add("title");
+  lunchItem3Title.textContent = "Granola";
+  const lunchItem3Content = document.createElement("p");
+  lunchItem3Content.classList.add("content");
+  lunchItem3Content.textContent =
+    "Granola with Acai Berry, Greek Yoghurt, Berries, Honey & Nuts";
+  const lunchItem3Price = document.createElement("p");
+  lunchItem3Price.classList.add("price");
+  lunchItem3Price.textContent = "€8.50";
+
+  lunchItem3.appendChild(lunchItem3Title);
+  lunchItem3.appendChild(lunchItem3Content);
+  lunchItem3.appendChild(lunchItem3Price);
+  lunch.appendChild(lunchItem3);
+
+  const lunchItem4 = document.createElement("div");
+  lunchItem4.classList.add("item", "item--4");
+
+  const lunchItem4Title = document.createElement("h3");
+  lunchItem4Title.classList.add("title");
+  lunchItem4Title.textContent = "Granola";
+  const lunchItem4Content = document.createElement("p");
+  lunchItem4Content.classList.add("content");
+  lunchItem4Content.textContent =
+    "Granola with Acai Berry, Greek Yoghurt, Berries, Honey & Nuts";
+  const lunchItem4Price = document.createElement("p");
+  lunchItem4Price.classList.add("price");
+  lunchItem4Price.textContent = "€8.50";
+
+  lunchItem4.appendChild(lunchItem4Title);
+  lunchItem4.appendChild(lunchItem4Content);
+  lunchItem4.appendChild(lunchItem4Price);
+  lunch.appendChild(lunchItem4);
+
+  const lunchItem5 = document.createElement("div");
+  lunchItem5.classList.add("item", "item--5");
+
+  const lunchItem5Title = document.createElement("h3");
+  lunchItem5Title.classList.add("title");
+  lunchItem5Title.textContent = "Granola";
+  const lunchItem5Content = document.createElement("p");
+  lunchItem5Content.classList.add("content");
+  lunchItem5Content.textContent =
+    "Granola with Acai Berry, Greek Yoghurt, Berries, Honey & Nuts";
+  const lunchItem5Price = document.createElement("p");
+  lunchItem5Price.classList.add("price");
+  lunchItem5Price.textContent = "€8.50";
+
+  lunchItem5.appendChild(lunchItem5Title);
+  lunchItem5.appendChild(lunchItem5Content);
+  lunchItem5.appendChild(lunchItem5Price);
+  lunch.appendChild(lunchItem5);
+
+  const lunchItem6 = document.createElement("div");
+  lunchItem6.classList.add("item", "item--6");
+
+  const lunchItem6Title = document.createElement("h3");
+  lunchItem6Title.classList.add("title");
+  lunchItem6Title.textContent = "Granola";
+  const lunchItem6Content = document.createElement("p");
+  lunchItem6Content.classList.add("content");
+  lunchItem6Content.textContent =
+    "Granola with Acai Berry, Greek Yoghurt, Berries, Honey & Nuts";
+  const lunchItem6Price = document.createElement("p");
+  lunchItem6Price.classList.add("price");
+  lunchItem6Price.textContent = "€8.60";
+
+  lunchItem6.appendChild(lunchItem6Title);
+  lunchItem6.appendChild(lunchItem6Content);
+  lunchItem6.appendChild(lunchItem6Price);
+  lunch.appendChild(lunchItem6);
+
+  lunchMenu.appendChild(lunch);
 
   return lunchMenu;
 }

@@ -65,6 +65,7 @@ body {
   display: flex;
   width: 33%;
   justify-content: space-around;
+  gap: 16px;
 }
 
 .header-tabs > .btn {
@@ -181,6 +182,8 @@ body {
   transform: translateY(-10px);
 }
 
+.breakfast,
+.lunch,
 .drinks {
   padding: 60px;
   display: grid;
@@ -188,6 +191,12 @@ body {
   color: white;
   font-family: "EbGaramond", sans-serif;
   gap: 60px;
+}
+
+.breakfast,
+.lunch {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 }
 
 .item {
