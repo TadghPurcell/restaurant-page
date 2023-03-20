@@ -182,7 +182,7 @@ function createBreakfastMenu() {
   const breakfastItem1Content = document.createElement("p");
   breakfastItem1Content.classList.add("content");
   breakfastItem1Content.textContent =
-    "Granola with acai berry, greek yoghurt, berries, honey & nuts.";
+    "Granola with acai berry, greek yoghurt, berries, honey & nuts";
   const breakfastItem1Price = document.createElement("p");
   breakfastItem1Price.classList.add("price");
   breakfastItem1Price.textContent = "€8.50";
@@ -201,7 +201,7 @@ function createBreakfastMenu() {
   const breakfastItem2Content = document.createElement("p");
   breakfastItem2Content.classList.add("content");
   breakfastItem2Content.textContent =
-    "Smashed avocado on toasted sourdough bread, topped with a poached egg and served with grilled tomatoes.";
+    "Smashed avocado on toasted sourdough bread, topped with a poached egg and served with grilled tomatoes";
   const breakfastItem2Price = document.createElement("p");
   breakfastItem2Price.classList.add("price");
   breakfastItem2Price.textContent = "€11.20";
