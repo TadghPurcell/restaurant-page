@@ -204,11 +204,15 @@ function createBreakfastMenu() {
     "Smashed avocado on toasted sourdough bread, topped with a poached egg and served with grilled tomatoes.";
   const breakfastItem2Price = document.createElement("p");
   breakfastItem2Price.classList.add("price");
-  breakfastItem2Price.textContent = "€8.50";
+  breakfastItem2Price.textContent = "€11.20";
+  const breakfastItem2AddOn = document.createElement("p");
+  breakfastItem2AddOn.classList.add("addon");
+  breakfastItem2AddOn.textContent = "Add Bacon €3.50";
 
   breakfastItem2.appendChild(breakfastItem2Title);
   breakfastItem2.appendChild(breakfastItem2Content);
   breakfastItem2.appendChild(breakfastItem2Price);
+  breakfastItem2.appendChild(breakfastItem2AddOn);
   breakfast.appendChild(breakfastItem2);
 
   const breakfastItem3 = document.createElement("div");
@@ -216,14 +220,14 @@ function createBreakfastMenu() {
 
   const breakfastItem3Title = document.createElement("h3");
   breakfastItem3Title.classList.add("title");
-  breakfastItem3Title.textContent = "Granola";
+  breakfastItem3Title.textContent = "Blueberry & Banana Pancakes";
   const breakfastItem3Content = document.createElement("p");
   breakfastItem3Content.classList.add("content");
   breakfastItem3Content.textContent =
-    "Granola with Acai Berry, Greek Yoghurt, Berries, Honey & Nuts";
+    "Buttermilk pancakes w/ blueberry home compote, mascarpone, maple syrup & hazelnuts";
   const breakfastItem3Price = document.createElement("p");
   breakfastItem3Price.classList.add("price");
-  breakfastItem3Price.textContent = "€8.50";
+  breakfastItem3Price.textContent = "€10.50";
 
   breakfastItem3.appendChild(breakfastItem3Title);
   breakfastItem3.appendChild(breakfastItem3Content);
@@ -235,14 +239,14 @@ function createBreakfastMenu() {
 
   const breakfastItem4Title = document.createElement("h3");
   breakfastItem4Title.classList.add("title");
-  breakfastItem4Title.textContent = "Granola";
+  breakfastItem4Title.textContent = "Irish Brekkie Sandwich";
   const breakfastItem4Content = document.createElement("p");
   breakfastItem4Content.classList.add("content");
   breakfastItem4Content.textContent =
-    "Granola with Acai Berry, Greek Yoghurt, Berries, Honey & Nuts";
+    "Bacon, sausage, Clonakilty black pudding, cheddar cheese and BallyMaloe relish";
   const breakfastItem4Price = document.createElement("p");
   breakfastItem4Price.classList.add("price");
-  breakfastItem4Price.textContent = "€8.50";
+  breakfastItem4Price.textContent = "€11.20";
 
   breakfastItem4.appendChild(breakfastItem4Title);
   breakfastItem4.appendChild(breakfastItem4Content);
@@ -254,14 +258,14 @@ function createBreakfastMenu() {
 
   const breakfastItem5Title = document.createElement("h3");
   breakfastItem5Title.classList.add("title");
-  breakfastItem5Title.textContent = "Granola";
+  breakfastItem5Title.textContent = "American Style Pancakes";
   const breakfastItem5Content = document.createElement("p");
   breakfastItem5Content.classList.add("content");
   breakfastItem5Content.textContent =
-    "Granola with Acai Berry, Greek Yoghurt, Berries, Honey & Nuts";
+    "Stack of fluffy pancakes served with Nutella and strawberries";
   const breakfastItem5Price = document.createElement("p");
   breakfastItem5Price.classList.add("price");
-  breakfastItem5Price.textContent = "€8.50";
+  breakfastItem5Price.textContent = "€10.20";
 
   breakfastItem5.appendChild(breakfastItem5Title);
   breakfastItem5.appendChild(breakfastItem5Content);
@@ -273,14 +277,14 @@ function createBreakfastMenu() {
 
   const breakfastItem6Title = document.createElement("h3");
   breakfastItem6Title.classList.add("title");
-  breakfastItem6Title.textContent = "Granola";
+  breakfastItem6Title.textContent = "Scrambled Eggs";
   const breakfastItem6Content = document.createElement("p");
   breakfastItem6Content.classList.add("content");
   breakfastItem6Content.textContent =
-    "Granola with Acai Berry, Greek Yoghurt, Berries, Honey & Nuts";
+    "Scrambled eggs served on you choice of bread, sourdough, white and brown";
   const breakfastItem6Price = document.createElement("p");
   breakfastItem6Price.classList.add("price");
-  breakfastItem6Price.textContent = "€8.60";
+  breakfastItem6Price.textContent = "€9.60";
 
   breakfastItem6.appendChild(breakfastItem6Title);
   breakfastItem6.appendChild(breakfastItem6Content);

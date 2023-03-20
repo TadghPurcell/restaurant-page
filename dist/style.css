@@ -196,7 +196,7 @@ body {
 .breakfast,
 .lunch {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 }
 
 .item {
@@ -213,6 +213,11 @@ body {
   height: 250px;
 }
 
+.breakfast > .item,
+.lunch > .item {
+  height: 300px;
+}
+
 .item > .title {
   font-family: "DancingScript", sans-serif;
   font-size: 3rem;
@@ -220,6 +225,7 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   padding-bottom: 12px;
   text-align: center;
+  width: max-content;
 }
 
 .item:hover {
@@ -236,6 +242,9 @@ body {
 
 .item > .price {
   font-size: 1.8rem;
+}
+.item > .addon {
+  font-size: 1.4rem;
 }
 
 .hidden {
