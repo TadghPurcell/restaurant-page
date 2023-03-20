@@ -31,6 +31,10 @@ body {
   background-position: center;
 }
 
+.content {
+  padding-bottom: 30px;
+}
+
 .header {
   background-color: rgba(0, 0, 0, 0.85);
   height: 20vh;
@@ -39,10 +43,11 @@ body {
   gap: 20px;
   align-items: center;
   justify-content: center;
+  margin-bottom: 60px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
-  color: white;
   font-family: "DancingScript", sans-serif;
   font-size: 4rem;
   font-weight: 400;
@@ -89,4 +94,47 @@ body {
 }
 .header-tabs > .btn:hover::after {
   opacity: 1;
+}
+
+.home {
+  display: grid;
+  width: 50vw;
+  transform: translateX(50%);
+  place-items: center;
+  justify-content: center;
+  /* grid-template-columns: 40vw; */
+  background-color: rgba(0, 0, 0, 0.66);
+  /* box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.6); */
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+
+  margin-bottom: 60px;
+}
+
+.home > * {
+  padding: 60px;
+  font-family: var(--header-font), sans-serif;
+  color: white;
+  font-size: 2rem;
+}
+
+.home > .about {
+  font-size: 3rem;
+  /* color: rgb(205, 186, 36); */
+  font-weight: 400;
+}
+
+.home > .mission {
+  font-weight: 400;
+}
+.home > p {
+  font-size: 2rem;
+}
+
+.home > .logo {
+  font-family: "DancingScript", sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 0.25rem;
+  padding: 60px;
+  color: white;
 }
