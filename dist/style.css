@@ -58,6 +58,7 @@ body {
 
 .header-tabs > .btn {
   font-family: var(--header-font), sans-serif;
+  cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
   border: none;
   color: rgba(255, 255, 255, 0.713);
