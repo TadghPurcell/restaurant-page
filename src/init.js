@@ -13,10 +13,12 @@ export default function createHeader() {
   const btnHome = document.createElement("button");
   btnHome.classList.add("btn", "btn-home");
   btnHome.textContent = "Home";
+  btnHome.setAttribute("autofocus", "");
   headerTabs.appendChild(btnHome);
 
   btnHome.addEventListener("click", function () {
     document.querySelector(".home").classList.remove("hidden");
+    document.querySelector(".menu").classList.add("hidden");
     // btnMenu.classList.add("hidden");
     // btnContact.classList.add("hidden");
   });
@@ -28,6 +30,7 @@ export default function createHeader() {
 
   btnMenu.addEventListener("click", function () {
     document.querySelector(".home").classList.add("hidden");
+    document.querySelector(".menu").classList.remove("hidden");
   });
 
   const btnContact = document.createElement("button");

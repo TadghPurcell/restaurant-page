@@ -1,6 +1,6 @@
 export default function createHome() {
   const home = document.createElement("div");
-  home.classList.add("home", "hidden");
+  home.classList.add("home");
 
   const logo = document.createElement("h1");
   logo.classList.add("logo");
