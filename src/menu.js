@@ -318,18 +318,22 @@ function createLunchMenu() {
 
   const lunchItem1Title = document.createElement("h3");
   lunchItem1Title.classList.add("title");
-  lunchItem1Title.textContent = "Granola";
+  lunchItem1Title.textContent = "Chicken & Pesto Pasta";
   const lunchItem1Content = document.createElement("p");
   lunchItem1Content.classList.add("content");
   lunchItem1Content.textContent =
-    "Granola with acai berry, greek yoghurt, berries, honey & nuts.";
+    "Griled chicken, basil pesto, sundried tomatoes and feta cheese served with durum pasta";
   const lunchItem1Price = document.createElement("p");
   lunchItem1Price.classList.add("price");
-  lunchItem1Price.textContent = "€8.50";
+  lunchItem1Price.textContent = "€13.50";
+  const lunchItem1AddOn = document.createElement("p");
+  lunchItem1AddOn.classList.add("addon");
+  lunchItem1AddOn.textContent = "Add Bacon €3.50";
 
   lunchItem1.appendChild(lunchItem1Title);
   lunchItem1.appendChild(lunchItem1Content);
   lunchItem1.appendChild(lunchItem1Price);
+  lunchItem1.appendChild(lunchItem1AddOn);
   lunch.appendChild(lunchItem1);
 
   const lunchItem2 = document.createElement("div");
@@ -337,14 +341,14 @@ function createLunchMenu() {
 
   const lunchItem2Title = document.createElement("h3");
   lunchItem2Title.classList.add("title");
-  lunchItem2Title.textContent = "Smashed Avocado";
+  lunchItem2Title.textContent = "BLT Sandwich";
   const lunchItem2Content = document.createElement("p");
   lunchItem2Content.classList.add("content");
   lunchItem2Content.textContent =
-    "Smashed avocado on toasted sourdough bread, topped with a poached egg and served with grilled tomatoes.";
+    "Freshly toasted sourdough bread topped with bacon, lettuce and tomato";
   const lunchItem2Price = document.createElement("p");
   lunchItem2Price.classList.add("price");
-  lunchItem2Price.textContent = "€8.50";
+  lunchItem2Price.textContent = "€12";
 
   lunchItem2.appendChild(lunchItem2Title);
   lunchItem2.appendChild(lunchItem2Content);
@@ -356,14 +360,13 @@ function createLunchMenu() {
 
   const lunchItem3Title = document.createElement("h3");
   lunchItem3Title.classList.add("title");
-  lunchItem3Title.textContent = "Granola";
+  lunchItem3Title.textContent = "Goat's Cheese Tartlet";
   const lunchItem3Content = document.createElement("p");
   lunchItem3Content.classList.add("content");
-  lunchItem3Content.textContent =
-    "Granola with Acai Berry, Greek Yoghurt, Berries, Honey & Nuts";
+  lunchItem3Content.textContent = "With caramelized red onions and pecan nuts";
   const lunchItem3Price = document.createElement("p");
   lunchItem3Price.classList.add("price");
-  lunchItem3Price.textContent = "€8.50";
+  lunchItem3Price.textContent = "€11.70";
 
   lunchItem3.appendChild(lunchItem3Title);
   lunchItem3.appendChild(lunchItem3Content);
@@ -375,14 +378,14 @@ function createLunchMenu() {
 
   const lunchItem4Title = document.createElement("h3");
   lunchItem4Title.classList.add("title");
-  lunchItem4Title.textContent = "Granola";
+  lunchItem4Title.textContent = "Vegetarian Lasagna";
   const lunchItem4Content = document.createElement("p");
   lunchItem4Content.classList.add("content");
   lunchItem4Content.textContent =
-    "Granola with Acai Berry, Greek Yoghurt, Berries, Honey & Nuts";
+    "Lasagna with zucchini, squash, carrot, roasted cauliflower & mushrooms";
   const lunchItem4Price = document.createElement("p");
   lunchItem4Price.classList.add("price");
-  lunchItem4Price.textContent = "€8.50";
+  lunchItem4Price.textContent = "€14.50";
 
   lunchItem4.appendChild(lunchItem4Title);
   lunchItem4.appendChild(lunchItem4Content);
@@ -394,14 +397,14 @@ function createLunchMenu() {
 
   const lunchItem5Title = document.createElement("h3");
   lunchItem5Title.classList.add("title");
-  lunchItem5Title.textContent = "Granola";
+  lunchItem5Title.textContent = "Soup of The Day!";
   const lunchItem5Content = document.createElement("p");
   lunchItem5Content.classList.add("content");
   lunchItem5Content.textContent =
-    "Granola with Acai Berry, Greek Yoghurt, Berries, Honey & Nuts";
+    "Served with wholemeal brown bread and Irish butter";
   const lunchItem5Price = document.createElement("p");
   lunchItem5Price.classList.add("price");
-  lunchItem5Price.textContent = "€8.50";
+  lunchItem5Price.textContent = "€6.50";
 
   lunchItem5.appendChild(lunchItem5Title);
   lunchItem5.appendChild(lunchItem5Content);
@@ -413,14 +416,14 @@ function createLunchMenu() {
 
   const lunchItem6Title = document.createElement("h3");
   lunchItem6Title.classList.add("title");
-  lunchItem6Title.textContent = "Granola";
+  lunchItem6Title.textContent = "Salad of The Day!";
   const lunchItem6Content = document.createElement("p");
   lunchItem6Content.classList.add("content");
   lunchItem6Content.textContent =
-    "Granola with Acai Berry, Greek Yoghurt, Berries, Honey & Nuts";
+    "Your choice of salad served with sourdough bread";
   const lunchItem6Price = document.createElement("p");
   lunchItem6Price.classList.add("price");
-  lunchItem6Price.textContent = "€8.60";
+  lunchItem6Price.textContent = "€11.60";
 
   lunchItem6.appendChild(lunchItem6Title);
   lunchItem6.appendChild(lunchItem6Content);
