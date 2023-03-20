@@ -1,4 +1,4 @@
-function createHeader() {
+export default function createHeader() {
   const header = document.createElement("div");
   header.classList.add("header");
 
@@ -15,19 +15,31 @@ function createHeader() {
   btnHome.textContent = "Home";
   headerTabs.appendChild(btnHome);
 
+  btnHome.addEventListener("click", function () {
+    document.querySelector(".home").classList.remove("hidden");
+    // btnMenu.classList.add("hidden");
+    // btnContact.classList.add("hidden");
+  });
+
   const btnMenu = document.createElement("button");
   btnMenu.classList.add("btn", "btn-menu");
   btnMenu.textContent = "Menu";
   headerTabs.appendChild(btnMenu);
+
+  btnMenu.addEventListener("click", function () {
+    document.querySelector(".home").classList.add("hidden");
+  });
 
   const btnContact = document.createElement("button");
   btnContact.classList.add("btn", "btn-contact");
   btnContact.textContent = "Contact";
   headerTabs.appendChild(btnContact);
 
+  btnContact.addEventListener("click", function () {
+    document.querySelector(".home").classList.add("hidden");
+  });
+
   header.appendChild(headerTabs);
 
   return header;
 }
-
-export default createHeader;

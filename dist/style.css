@@ -102,12 +102,31 @@ body {
   transform: translateX(50%);
   place-items: center;
   justify-content: center;
-  /* grid-template-columns: 40vw; */
   background-color: rgba(0, 0, 0, 0.66);
-  /* box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.6); */
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
-
   margin-bottom: 60px;
+  transition: opacity 1s ease-out 1s;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateX(50%) scaleY(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(50%) scaleY(1);
+  }
 }
 
 .home > * {
@@ -119,7 +138,6 @@ body {
 
 .home > .about {
   font-size: 3rem;
-  /* color: rgb(205, 186, 36); */
   font-weight: 400;
 }
 
@@ -137,4 +155,9 @@ body {
   letter-spacing: 0.25rem;
   padding: 60px;
   color: white;
+}
+
+.hidden {
+  animation: fadeOut 0.5s;
+  transform: scaleY(0);
 }
