@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(0deg, #00000055, #ffffff22),
+    url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  box-sizing: border-box;
+  background-position: center;
+}
