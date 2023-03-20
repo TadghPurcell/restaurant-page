@@ -156,9 +156,46 @@ function createDrinksMenu() {
   return drinksMenu;
 }
 
+function createBreakfastMenu() {
+  const breakfastMenu = document.createElement("div");
+  breakfastMenu.classList.add("breakfast-menu");
+
+  const menuTitle = document.createElement("div");
+  menuTitle.classList.add("menu-title");
+
+  const menuTitleName = document.createElement("h1");
+  menuTitleName.classList.add("menu-title-name");
+  menuTitleName.textContent = "Breakfast";
+
+  menuTitle.appendChild(menuTitleName);
+  breakfastMenu.appendChild(menuTitle);
+
+  return breakfastMenu;
+}
+
+function createLunchMenu() {
+  const lunchMenu = document.createElement("div");
+  lunchMenu.classList.add("lunch-menu");
+
+  const menuTitle = document.createElement("div");
+  menuTitle.classList.add("menu-title");
+
+  const menuTitleName = document.createElement("h1");
+  menuTitleName.classList.add("menu-title-name");
+  menuTitleName.textContent = "Lunch";
+
+  menuTitle.appendChild(menuTitleName);
+  lunchMenu.appendChild(menuTitle);
+
+  return lunchMenu;
+}
+
 export default function createMenu() {
   const menu = document.createElement("div");
   menu.classList.add("menu", "hidden");
+  menu.appendChild(createBreakfastMenu());
+  menu.appendChild(createLunchMenu());
   menu.appendChild(createDrinksMenu());
+
   return menu;
 }
