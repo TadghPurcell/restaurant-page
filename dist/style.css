@@ -65,7 +65,6 @@ body {
   font-weight: 400;
   letter-spacing: 0.05rem;
   position: relative;
-  opacity: 1;
 }
 
 .header-tabs > .btn::after {
@@ -78,10 +77,9 @@ body {
   width: 100%;
 }
 
-.header-tabs > .btn:focus {
-  display: block;
+.header-tabs > .btn:focus::after {
+  opacity: 1;
   border-bottom: 1px solid rgba(255, 255, 255, 0.75);
-  content: "";
 }
 .header-tabs > .btn:hover::after {
   opacity: 1;
