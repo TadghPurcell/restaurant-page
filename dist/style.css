@@ -282,7 +282,7 @@ body {
 .contact-details,
 .hours-content,
 .address-content,
-.address {
+.address-details {
   display: flex;
   flex-direction: column;
   gap: 16px;
