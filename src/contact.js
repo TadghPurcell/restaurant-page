@@ -6,7 +6,7 @@ export default function createContact() {
   locationDetails.classList.add("location-details");
 
   const addressDetails = document.createElement("div");
-  address.classList.add("address-details");
+  addressDetails.classList.add("address-details");
 
   const addressHeader = document.createElement("h3");
   addressHeader.classList.add("address-header");
@@ -35,7 +35,7 @@ export default function createContact() {
   const map = document.createElement("div");
   map.innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19362.3471865442!2d-7.2489604110001835!3d52.6546779169583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sie!4v1679380918545!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
 
-  locationDetails.appendChild(address);
+  locationDetails.appendChild(addressDetails);
   locationDetails.appendChild(map);
 
   const informationDetails = document.createElement("div");
@@ -74,9 +74,11 @@ export default function createContact() {
 
   const contactNumber = document.createElement("p");
   contactNumber.classList.add("number");
+  contactNumber.textContent = " +353 20 919 2682";
 
   const contactEmail = document.createElement("p");
   contactEmail.classList.add("email");
+  contactEmail.textContent = " TheButterSlip@fakeemail.com";
 
   contactDetails.appendChild(contactHeader);
   contactDetails.appendChild(contactNumber);
