@@ -250,6 +250,7 @@ body {
 
 .contact {
   padding: 60px;
+  margin-bottom: 60px;
   background-color: var(--main-bgc);
   color: white;
   display: grid;
@@ -257,17 +258,13 @@ body {
   gap: 140px;
   font-size: 1.75rem;
   font-family: "EBGaramond", sans-serif;
+  animation: fadeIn 0.5s;
 }
 
 .contact h3 {
   font-family: "DancingScript", sans-serif;
   font-weight: 400;
   font-size: 3rem;
-}
-
-.address-content > span,
-.hours-content > span {
-  display: block;
 }
 
 .information-details,
@@ -281,6 +278,21 @@ body {
   justify-content: space-between;
 }
 
+.hours-details,
+.contact-details,
+.hours-content,
+.address-content,
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.hours-content {
+  gap: 6px;
+}
+.address-content {
+  gap: 4px;
+}
 .contact-details {
   margin-bottom: 160px;
 }
