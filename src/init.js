@@ -19,6 +19,7 @@ export default function createHeader() {
   btnHome.addEventListener("click", function () {
     document.querySelector(".home").classList.remove("hidden");
     document.querySelector(".menu").classList.add("hidden");
+    document.querySelector(".contact").classList.add("hidden");
     // btnMenu.classList.add("hidden");
     // btnContact.classList.add("hidden");
   });
@@ -31,6 +32,7 @@ export default function createHeader() {
   btnMenu.addEventListener("click", function () {
     document.querySelector(".home").classList.add("hidden");
     document.querySelector(".menu").classList.remove("hidden");
+    document.querySelector(".contact").classList.add("hidden");
   });
 
   const btnContact = document.createElement("button");
@@ -40,6 +42,8 @@ export default function createHeader() {
 
   btnContact.addEventListener("click", function () {
     document.querySelector(".home").classList.add("hidden");
+    document.querySelector(".menu").classList.add("hidden");
+    document.querySelector(".contact").classList.remove("hidden");
   });
 
   header.appendChild(headerTabs);
