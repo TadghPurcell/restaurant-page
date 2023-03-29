@@ -5,65 +5,59 @@ export default function createContact() {
   const locationDetails = document.createElement("div");
   locationDetails.classList.add("location-details");
 
-  const addressDetails = document.createElement("div");
-  addressDetails.classList.add("address-details");
+  const createDetails = function (title, ...contents) {
+    const details = document.createElement("div");
+    details.classList.add(`${title}-details`);
 
-  const addressHeader = document.createElement("h3");
-  addressHeader.classList.add("address-header");
-  addressHeader.textContent = "Address";
+    const header = document.createElement("h3");
+    header.classList.add(`${title}-header`);
+    header.textContent = title;
+    header.style.textTransform = "Capitalize";
 
-  const addressContent = document.createElement("p");
-  addressContent.classList.add("address-content");
+    const content = document.createElement("p");
+    content.classList.add(`${title}-content`);
 
-  const addressSpan1 = document.createElement("span");
-  addressSpan1.textContent = "158 Tulip Inn Street,";
-  const addressSpan2 = document.createElement("span");
-  addressSpan2.textContent = "Kilkenny,";
-  const addressSpan3 = document.createElement("span");
-  addressSpan3.textContent = "Co. Kilkenny,";
-  const addressSpan4 = document.createElement("span");
-  addressSpan4.textContent = "R95 E3792X";
+    const span1 = document.createElement("span");
+    span1.textContent = contents[0];
 
-  addressContent.appendChild(addressSpan1);
-  addressContent.appendChild(addressSpan2);
-  addressContent.appendChild(addressSpan3);
-  addressContent.appendChild(addressSpan4);
+    const span2 = document.createElement("span");
+    span2.textContent = contents[1];
 
-  addressDetails.appendChild(addressHeader);
-  addressDetails.appendChild(addressContent);
+    const span3 = document.createElement("span");
+    span3.textContent = contents[2];
+
+    const span4 = document.createElement("span");
+    span4.textContent = contents[3];
+
+    console.log(contents[3]);
+
+    if (contents[0]) content.appendChild(span1);
+    if (contents[1]) content.appendChild(span2);
+    if (contents[2]) content.appendChild(span3);
+    if (contents[3]) content.appendChild(span4);
+
+    details.appendChild(header);
+    details.appendChild(content);
+
+    return details;
+  };
 
   const map = document.createElement("div");
   map.innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19362.3471865442!2d-7.2489604110001835!3d52.6546779169583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sie!4v1679380918545!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
 
-  locationDetails.appendChild(addressDetails);
+  locationDetails.appendChild(
+    createDetails(
+      "address",
+      "158 Tulip Inn Street,",
+      "158 Tulip Inn Street,",
+      "Co. Kilkenny,",
+      "R95 E3792X"
+    )
+  );
   locationDetails.appendChild(map);
 
   const informationDetails = document.createElement("div");
   informationDetails.classList.add("information-details");
-
-  const hoursDetails = document.createElement("div");
-  hoursDetails.classList.add("hours-details");
-
-  const hoursHeader = document.createElement("h3");
-  hoursHeader.classList.add("hours-header");
-  hoursHeader.textContent = "Hours";
-
-  const hoursContent = document.createElement("p");
-  hoursContent.classList.add("hours-content");
-
-  const hoursSpan1 = document.createElement("span");
-  hoursSpan1.textContent = "Monday-Friday: 07:30 - 16:00";
-  const hoursSpan2 = document.createElement("span");
-  hoursSpan2.textContent = "Saturday: 08:30 - 15:00";
-  const hoursSpan3 = document.createElement("span");
-  hoursSpan3.textContent = "Sunday: 9:30 - 16:00";
-
-  hoursContent.appendChild(hoursSpan1);
-  hoursContent.appendChild(hoursSpan2);
-  hoursContent.appendChild(hoursSpan3);
-
-  hoursDetails.appendChild(hoursHeader);
-  hoursDetails.appendChild(hoursContent);
 
   const contactDetails = document.createElement("div");
   contactDetails.classList.add("contact-details");
@@ -84,7 +78,14 @@ export default function createContact() {
   contactDetails.appendChild(contactNumber);
   contactDetails.appendChild(contactEmail);
 
-  informationDetails.appendChild(hoursDetails);
+  informationDetails.appendChild(
+    createDetails(
+      "hours",
+      "Monday-Friday: 07:30 - 16:00",
+      "Saturday: 08:30 - 15:00",
+      "Sunday: 9:30 - 16:00"
+    )
+  );
   informationDetails.appendChild(contactDetails);
 
   contact.appendChild(locationDetails);

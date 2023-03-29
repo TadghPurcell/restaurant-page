@@ -22,7 +22,6 @@ const createMenuItem = function (title, content, price, addOn) {
   if (content) menuItem.appendChild(menuItemContent);
   menuItem.appendChild(menuItemPrice);
   if (addOn) menuItem.appendChild(menuItemAddOn);
-  console.log(menuItem);
 
   return menuItem;
 };

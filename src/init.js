@@ -20,8 +20,6 @@ export default function createHeader() {
     document.querySelector(".home").classList.remove("hidden");
     document.querySelector(".menu").classList.add("hidden");
     document.querySelector(".contact").classList.add("hidden");
-    // btnMenu.classList.add("hidden");
-    // btnContact.classList.add("hidden");
   });
 
   const btnMenu = document.createElement("button");
